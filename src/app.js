@@ -1,25 +1,22 @@
+require("dotenv").config();
 let express = require('express');
 const path = require("path")
 const bodyParser = require('body-parser');
 const cookieparser = require('cookie-parser');
 const session = require('express-session');
-// const mongostore = require('connect-mongo')(session);
 let app = express();
-let port = 8000;
+let port = process.env.PORT || 8000;
 
 require("../src/db/connections");
 const Router = require("../src/routers/router");
 const methodOverride = require("method-override");
 const { default: mongoose } = require('mongoose');
 
-// require("../src/middleware/passport");
-
 app.use(cookieparser());
 app.use(session({
-    secret: 'mysupersecret',
+    secret: process.env.SESSION_KEY,
     resave: false,
     saveUninitialized: false,
-    // store: new mongostore({mongooseConnection: mongoose.connection}),
   }))
 
 app.use(bodyParser.json());

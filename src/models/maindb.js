@@ -39,7 +39,7 @@ const productlistform = mongo.Schema({
 
 
 
-const productDB = mongo.model("product_DB", productlistform)
+const productDB = mongo.model(process.env.DB_ADDPRODUCT_COLLECTION, productlistform)
 
 
 module.exports = productDB;

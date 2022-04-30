@@ -2,7 +2,7 @@ const express = require("express");
 
 const mongo = require('mongoose');
 
-mongo.connect("mongodb+srv://sufiyan:sufiyan9080@cluster0.zdahw.mongodb.net/shoeskart?retryWrites=true&w=majority", {
+mongo.connect(process.env.DBCONNECTIONKEY, {
 }).then(() =>{
     console.log('you connected with the server.....');
 }).catch((e) => {

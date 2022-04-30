@@ -8,11 +8,6 @@ const upload = require("../middleware/forimages");
 const Router = new express.Router();
 const session = require('express-session');
 
-// const csrf = require("csurf");
-const passport = require("passport");
-// const csrfprotection = csrf();
-// Router.use(csrfprotection);
-
 
 
 Router.get('/shoeskart',auth, async(req, res) => {

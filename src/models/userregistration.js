@@ -74,7 +74,7 @@ const userregistration = mongo.Schema({
 
 userregistration.methods.createtoken = async function(){
     try {
-        const jwttoken = jwt.sign({_id:this._id}, "mynameismohdsufiyaniamadeveloper");
+        const jwttoken = jwt.sign({_id:this._id}, process.env.JWTTOKEN);
         this.tokens = this.tokens.concat({token:jwttoken});
         await this.save();  
         return jwttoken
@@ -94,6 +94,6 @@ userregistration.pre("save", async function(next){
 })
 
 
-const registerDB = mongo.model("user_DB", userregistration)
+const registerDB = mongo.model(process.env.DB_REGISTERED_COLLECTION, userregistration)
 
 module.exports = registerDB;
