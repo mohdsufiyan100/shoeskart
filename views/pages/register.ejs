@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="../../assets/css/profile.css">
+
+</head>
+<body>
+<header>
+    <%- include('../partials/forlogin'); %>
+</header>
+
+<div class="loginorsignoutbanner">
+    <h1>Welcome to ShoesKart!</h1>
+    <div class="graphics">
+        <img src="../../assets/images/shoesgraphics-removebg-preview.png" alt="graphics">
+    </div>
+</div>
+
+
+
+<div id="userid">
+    <div id="signup">
+        <h1 id="sign0">Sign up</h1>
+        <form action="/shoeskart/register" method="post">
+           <div class="twoforms">
+            <div id="f1">
+                <div class="signinput">
+                    <input type="text" name="yourfname" required="">
+                    <label>First name</label>
+                </div>
+                <div class="signinput">
+                    <input type="text" name="yourlname" required="">
+                    <label>Last name</label>
+                </div>
+                <div class="signinput">
+                    <input type="email" name="youremail" required="">
+                    <label>Email</label>
+                </div>
+                <div class="signinput">
+                    <input type="number" name="yourphone" required="">
+                    <label>Phone no.</label>
+                </div>
+                <div class="signinput">
+                    <input type="password" name="yourpassword" required="">
+                    <label>Password</label>
+                </div>
+            </div>
+            <div id="addressformreg" class="formsuser">
+                <h2>Your Address</h2>
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Your name</label>
+                        <input type="text" class="forname" id="forname" name="addressname" placeholder="your name">
+                    </div>
+                    
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Mobile</label>
+                        <input type="number" class="forname" id="forname" name="addressphone" placeholder="your No.">
+                    </div>
+                    
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Your Email</label>
+                        <input type="email" class="forname" id="forname" name="addressemail" placeholder="your Email">
+                    </div>
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Area, Street, Village</label>
+                        <input type="text" class="forname" id="forname" name="addressarea" placeholder="your Area">
+                    </div>
+                    
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Pin code</label>
+                        <input type="number" class="forname" id="forname" name="addresspincode" placeholder="Pin code">
+                    </div>
+                    
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Your City</label>
+                        <input type="text" class="forname" id="forname" name="addresscity" placeholder="your City">
+                    </div>
+                    
+                    <div class="addressname">
+                        <label for="forname" class="forlable">Your State</label>
+                        <input type="text" class="forname" id="forname" name="addressstate" placeholder="your State">
+                    </div>
+                    <div class="forresponsivebtn">
+                     <button type="submit" class="addressbtn">Sign up</button>
+                     <a href="/shoeskart/profile" class="savebtn">Cancel</a>
+                    </div>
+
+            </div>
+           </div>
+        </form>
+        
+        <button id="nextbtn">Next</button>
+        <a href="/shoeskart/login">
+            <p>Already have account - <span id="forlogin">Log in</span></p>
+        </a>
+    </div>
+</div>
+
+
+<script>
+    let addressform = document.getElementById('addressformreg');
+    let nextbtn = document.getElementById('nextbtn');
+
+    addressform.style.display = "none";
+    
+    nextbtn.addEventListener('click', () => {
+        addressform.style.display = "block";
+
+    })
+</script>
+
+    
+</body>
+</html>

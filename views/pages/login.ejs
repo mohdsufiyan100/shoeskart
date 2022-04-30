@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="../../assets/css/profile.css">
+
+</head>
+<body>
+<header>
+    <%- include('../partials/forlogin'); %>
+</header>
+
+<div class="loginorsignoutbanner">
+    <h1 class="loginorsignoutbannerh1">Welcome to ShoesKart!</h1>
+    <div class="graphics">
+        <img src="../../assets/images/shoesgraphics-removebg-preview.png" alt="graphics">
+    </div>
+</div>
+
+<div id="userid">   
+    <div id="login">
+        <h1 id="log0">Log in</h1>
+        <form action="/shoeskart/login" method="post">
+            <div class="loginput">
+                <input type="email" name="inputemail" required="">
+                <label>Your email</label>
+            </div>
+            <div class="loginput">
+                <input type="password" name="inputpassword" required="">
+                <label>Password</label>
+            </div>
+            <button>Log in</button>
+            <a href="/shoeskart/register">
+                <p>For Sign in - <span id="forsignup">Sign up</span></p>
+            </a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
