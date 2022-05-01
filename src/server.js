@@ -7,8 +7,8 @@ const session = require('express-session');
 let app = express();
 let port = process.env.PORT || 8000;
 
-require("../src/db/connections");
-const Router = require("../src/routers/router");
+require("./db/connections");
+const Router = require("./routers/router");
 const methodOverride = require("method-override");
 const { default: mongoose } = require('mongoose');
 
