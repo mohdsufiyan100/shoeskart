@@ -10,7 +10,7 @@ const session = require('express-session');
 
 
 
-Router.get('/shoeskart',auth, async(req, res) => {
+Router.get('/shoeskart.herokuapp.com',auth, async(req, res) => {
     try {
        
         await forproductlist.find().then((data) => {
