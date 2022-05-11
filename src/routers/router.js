@@ -57,7 +57,7 @@ Router.post('/shoeskart/productlist',auth,upload.single("productimage"), async(r
 })
 
 Router.get('/shoeskart/login', (req, res) => {
-    res.status(200).render('pages/login.ejs');
+    res.status(200).render('pages/login.ejs', {loginalert: ""});
 })  
 Router.post('/shoeskart/login', async (req, res) => {
     try {
@@ -73,7 +73,6 @@ Router.post('/shoeskart/login', async (req, res) => {
         });
         if(ismatch){
             console.log(`your password is matched.....`)
-
             res.redirect("/shoeskart");
         }
         else{
@@ -311,15 +310,9 @@ Router.get('/shoeskart/logout',auth, async(req, res) => {
             return currentElement.token != req.token
         })
         res.clearCookie("jwt")
-        await req.foruserreg.save().then(() => {
-            res.redirect("/shoeskart/login")
-        }).catch(() => {
-            res.redirect("/shoeskart")
-        })
-        // res.status(200).render('pages/login.ejs');
-        // console.log("successful.....")
-    } catch (error) {
-        res.status(500).send(error);
+        await req.foruserreg.save()
+    } catch{
+        res.redirect("/shoeskart/login")
     }
 })
 Router.get('*', (req, res) => {

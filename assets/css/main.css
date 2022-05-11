@@ -932,65 +932,26 @@ html{
 }
 
 /* ---------------media quary for responsive web---------------- */
-
-@media(max-width: 375px){
-    html{
-        font-size: 55%;
-    }
-    #userid{
-        position: sticky;
-        left: 40%;
-        width: 300px;
-        height: 550px;
-        margin-top: 2.0rem;
-        margin-right: 0.80rem;
-    }
-    #login{
-        padding: 100px 20px 80px 30px;
-    }
-    #signup{
-        padding: 60px 20px 80px 30px;
-    }
+@media screen and (max-width: 475px) {
     .headinfo{
-        margin-top: -1.0rem;
+        margin-right: -60rem;
+        margin-top: -2rem;
     }
-    .search button{
-        font-size: 1.0rem;
-        margin-right: -2.0rem;
-    }
-    #searchinput{
-        margin-right: -2.0rem;
-        width: 20px;
-        animation: 2s search;
-    }
-    @keyframes search{
-        0%{
-            width: 0px;
-        }
-        70%{
-            width: 20px;
-        }
-    
-    }
+
+
     #basket{
-        padding: 0.30rem;
-        margin-right: -2.0rem;
-        margin-top: -0.50rem;
-        font-size: 1.0rem;
+        font-size: 3.0rem;
     }
     #register{
-        font-size: 1.0rem;
-        /* margin-right: -10.0rem; */
+        font-size: 3.0rem;
     }
     #responsive{
-        margin-right: -6.0rem;
-        margin-left: -1.0rem;
-        margin-top: -1.0rem;
-        font-size: 1.0rem;
         display: block;
     }
     #res{
         background-color: transparent;
+        font-size: 3.0rem;
+
     }
     .headerlogo{
         display: flex;
@@ -998,25 +959,31 @@ html{
         margin-top: -1.0rem;
     }
     .headerlogo a{
-        font-size: 1.0rem;
+        font-size: 3.0rem;
+
     }
     .contactno{
         display: none;
     }
-    
+    .search button{
+        font-size: 3.0rem;
+        margin-right: -2.0rem;
+    }
     .menubaar{
         display: none;
     }
+
+
     #formobileview{
         display: block;
-        width: 100vw;
-        height: 70vh;
-        /* padding: 2.0rem 2.0rem; */
+        width: 280vw;
+        height: 90vh;
+        margin-left: 2.0rem;
+        margin-top: 4.0rem;
         background-color: white;
         border: 0.20rem solid black;
         border: none;
-        /* text-align: cente; */
-        font-size: 1.0rem;
+        font-size: 3.0rem;
         overflow-y: auto;
         animation: 1s formobilemanu;
     }
@@ -1025,12 +992,12 @@ html{
             height: 0vh;
         }
         to{
-            height: 70vh;
+            height: 90vh;
         }
     }
     #categorylist{
         position: relative;
-        left: 6%;
+        left: 5%;
         background-color: transparent;
         box-shadow: none;
         text-align: left;
@@ -1039,7 +1006,6 @@ html{
         width: 20.0rem;
         margin-left: 1.0rem;
         margin-top: 2.0rem;
-        /* padding: 0.50rem; */
         cursor: pointer;
     }
     .menusocialicon{
@@ -1072,6 +1038,246 @@ html{
         margin-top: 2.0rem;
     }
 
+    .heading h2{
+        font-size: 3.0rem;
+        text-align: center;
+    }
+    .heading{
+        margin-top: -14.0rem;
+        margin-right: -40.0rem;
+        margin-left: 30.0rem;
+    }
+    .heading button{
+        font-size: 3.0rem;
+        padding: 1.0rem 1.50rem;
+        margin-left: 15.0rem;
+        margin-top: 2.0rem;
+    }
+
+
+    .products{
+        margin-top: -8.0rem;
+    }
+    .products_filter{
+        display: flex;
+        flex-direction: column;
+        margin-left: 35.0rem;
+        margin-top: 25.0rem;
+    }
+    .ourprd{
+        margin: -4.55rem auto;
+        width: 35.0rem;
+        display: block;
+        font-size: 3.0rem;
+    }
+    .filter{
+        margin: 2.0rem auto;
+        width: 31.0rem;
+        margin-left: -4.0rem;
+        margin-top: 2.0rem;
+    }
+    .filter button{
+        padding: .70rem 1.40rem .70rem 1.40rem;
+        font-size: 3.0rem;
+        margin-left: 1.0rem;
+        margin-top: 4.0rem;
+        border: none;
+    }
+    #productcontainer{
+        margin-bottom: 12.0rem;
+        background-color: white;
+        margin-top: 0.0rem;
+        margin-left: 2.0rem;
+        display: grid;
+        width: 30.0rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 1.0rem;
+    }
+    .productcard{
+        width: 30.0rem;
+        height: 43.0rem;
+        margin-left: 3.0rem;
+        margin-top: 3.0rem;
+    }
+    .productimg{
+       width: 23.0rem;
+       margin-left: 2.0rem;
+       padding: 0.30rem;
+    }
+    .productcarddis{
+        margin-top: 23.0rem;
+        margin-left: 2.0rem;
+    }
+    .productcard img{
+        position: absolute;
+    }
+    .disscribe{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3.0rem;
+        padding-left: 4.40rem;
+        margin-top: -.40rem;
+        
+    }
+    .price{
+        font-size: 3.0rem;
+        padding-left: 4.80rem;
+        margin-top: 1.0rem;
+        margin-bottom: 1.10rem;
+    }
+    .addtocartdisplay{
+        font-size: 3.0rem;
+        margin-left: 3.0rem;
+        margin-top: 2.0rem;
+    }
+
+    /*--------------- for footer --------------------- */
+
+    #footer{
+        font-size: 3.0rem;
+        margin-top: 20.0rem;
+        width: 280%;
+        height: 100vh;
+    }
+    .footerinput{
+        width: 480px;
+        padding-top: 2.0rem;
+    }
+    .footerinput input{
+        padding: 0rem 1.0rem .0rem 1.0rem;
+        width: 30.0rem;
+        font-size: 3.0rem;
+    }
+    .footerinput button{
+        padding: 1.50rem 1.0rem;
+        font-size: 3.0rem;
+    }
+    .footerdata{
+        margin-top: 2.0rem;
+        margin-left: 1.0rem;
+    }
+    .footermenu{
+        margin-right: 0.0rem;
+        margin-left: 3.0rem;
+    }
+    .footermenu ul{
+        margin-right: 6.0rem;
+    }
+    .footerservice{
+        margin-left: 0.0rem;
+    }
+    .footerservice ul{
+        margin-top: 1.0rem;
+    }
+    .footerservice ul li{
+        width: 20.0rem;
+    }
+    .footercontact{
+        margin-left: 10.0rem;
+        margin-top: 0.0rem;
+    }
+    .footercontact ul li{
+        display: block;
+        margin-left: -3.0rem;
+        margin-top: .0rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+    #user_ul ul li{
+        margin-top: 0.0rem;
+    }
+
+  }
+
+
+
+
+
+@media(max-width: 375px){
+    html{
+        font-size: 55%;
+    }
+    #userid{
+        position: sticky;
+        left: 40%;
+        width: 300px;
+        height: 550px;
+        margin-top: 2.0rem;
+        margin-right: 0.80rem;
+    }
+    #login{
+        padding: 100px 20px 80px 30px;
+    }
+    #signup{
+        padding: 60px 20px 80px 30px;
+    }
+    .search button{
+        font-size: 1.0rem;
+        margin-right: -2.0rem;
+    }
+    #searchinput{
+        margin-right: -2.0rem;
+        width: 20px;
+        animation: 2s search;
+    }
+    @keyframes search{
+        0%{
+            width: 0px;
+        }
+        70%{
+            width: 20px;
+        }
+    
+    }
+    .headinfo{
+        margin-right: 6rem;
+        margin-top: -2rem;
+    }
+    #basket{
+        padding: 0.30rem;
+        margin-right: -2.0rem;
+        margin-top: -0.50rem;
+        font-size: 1.0rem;
+    }
+    #register{
+        font-size: 1.0rem;
+    }
+    #responsive{
+        margin-right: -6.0rem;
+        margin-left: -1.0rem;
+        margin-top: -1.0rem;
+        display: block;
+    }
+    #res{
+        background-color: transparent;
+        font-size: 1.0rem;
+
+    }
+    .headerlogo{
+        display: flex;
+        margin-left: 1.0rem;
+        margin-top: -1.0rem;
+    }
+    .headerlogo a{
+        font-size: 1.0rem;
+    }
+    #formobileview{
+        width: 100vw;
+        height: 70vh;
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 1.0rem;
+        animation: 1s formobilemanu;
+    }
+    @keyframes formobilemanu {
+        from{
+            height: 0vh;
+        }
+        to{
+            height: 70vh;
+        }
+    }
+
     /*------ for banner ----------- */
     .left{
         width: 10.0rem; 
@@ -1102,58 +1308,66 @@ html{
         margin-top: 2.0rem;
     }
     .heading{
-        font-size: 1.0rem;
-        margin-left: 10.0rem;
         margin-top: -7.0rem;
+        margin-right: 10.0rem;
+        margin-left: 10.0rem;
     }
-    @keyframes heading{
-        from{
-            left: -10%;
-        }
+    .heading h2
+    {
+        font-size: 1.0rem;
+
     }
     .heading button{
         font-size: 1.0rem;
-        padding: 0.30rem 1.0rem;
-        margin-left: 0.0rem;
+        padding:0.30rem 1.0rem;
+        margin-left: 1.0rem;
         margin-top: 2.0rem;
     }
+
 
     /*------ for product ----------- */
     .products{
         margin-top: -8.0rem;
     }
     .products_filter{
-        display: flex;
-        flex-direction: column;
+        margin-left: 10.0rem;
+        margin-top: 10.0rem;
     }
     .ourprd{
-        margin: 2.0rem auto;
-        width: 11.50rem;
+        margin:auto;
+        width: 19.0rem;
+        display: block;
+        font-size: 1.0rem;
     }
     .filter{
-        margin: -1.0rem auto;
-        width: 15.0rem;
+        margin: 1.0rem auto;
+        width: 10.0rem;
+        margin-left: -2.0rem;
+        margin-top: 0.0rem;
     }
     .filter button{
-        padding: .0rem 0.50rem .0rem 0.50rem;
+        padding: .20rem 0.50rem .20rem 0.50rem;
         font-size: 1.0rem;
-        margin-left: 0.30rem;
+        margin-left: 0.40rem;
+        margin-top: 0.0rem;
+        border: none;
     }
     #productcontainer{
         margin-bottom: 12.0rem;
         background-color: white;
-        margin-top: 3.0rem;
+        margin-top: 0.0rem;
         margin-left: 2.0rem;
         display: grid;
         width: 26.0rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 1.0rem;
-        /* column-gap: -4.0rem; */
     }
     .productcard{
         width: 12.0rem;
         height: 20.0rem;
+        margin-left: 0.0rem;
+        margin-top: 0.0rem;
     }
     .productimg{
        width: 8.0rem;
@@ -1194,19 +1408,21 @@ html{
         height: 100vh;
     }
     .footerinput{
-        width: 310px;
+        width: 280px;
         padding-top: 2.0rem;
     }
     .footerinput input{
         padding: 0rem 1.0rem .0rem 1.0rem;
         width: 15.0rem;
+        font-size: 1.0rem;
     }
     .footerinput button{
         padding: .50rem 1.0rem;
+        font-size: 1.0rem;
     }
     .footerdata{
         margin-top: 2.0rem;
-        margin-left: 1.0rem;
+        margin-left: 0.0rem;
     }
     .footermenu{
         margin-right: -3.0rem;
@@ -1218,10 +1434,10 @@ html{
         margin-top: 1.0rem;
     }
     .footerservice ul li{
-        width: 14.0rem;
+        width: 10.0rem;
     }
     .footercontact{
-        margin-left: -35.0rem;
+        margin-left: -32.0rem;
         margin-top: 20.0rem;
     }
     .footercontact ul li{
@@ -1235,3 +1451,6 @@ html{
         margin-top: 0.0rem;
     }
 }
+
+
+  

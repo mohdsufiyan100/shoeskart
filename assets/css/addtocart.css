@@ -145,6 +145,35 @@ html{
 }
 
 /* ---------------media quary for responsive web---------------- */
+@media screen and (max-width: 475px) {
+    #displayCart{
+        font-size: 3.0rem;
+    }
+    .fullcart{
+        padding: 10.0rem 20.0rem;
+        
+    }
+    .imgpro img{
+        margin-top: -10.30rem;
+        margin-left: -2.20rem;
+        width: 20.0rem;
+        /* margin: 1.20rem; */
+    }
+    .prddetail{
+        margin-top: -4.0rem;
+        margin-left: -5.0rem;
+        font-size: 3.0rem;
+        width: 20.0rem;
+    }
+    .prddetail h2{
+        padding-left: 1.20rem;
+        margin-top: 0.80rem;
+        width: 10.0rem;
+    }
+}
+
+
+
 
 @media(max-width: 375px){
     #displayCart{
