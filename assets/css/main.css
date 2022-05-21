@@ -1268,10 +1268,39 @@ html{
         margin-right: 0.80rem;
     }
     #login{
+        font-size: 1.0rem;
         padding: 70px 10px 20px 0px;
+    }
+    .loginput label{
+        padding: 40px 6px;
+    }
+    #login .loginput input{
+        width: 280px;
+        font-size: 1.0rem;
+    }
+    #login button{
+        width: 90px;
+        height: 40px;
+        font-size: 1.0rem;
+        margin-top: 20px;
+        margin-left: 0.0rem;
+        background-color: yellowgreen;
+        border: none;
+        outline: none;
     }
     #signup{
         padding: 60px 20px 80px 30px;
+        font-size: 1.0rem;
+    }
+    #sign0{
+        font-size: 2.0rem;
+    }
+    #signup .signinput input{
+        margin-top: 35px;
+        padding: 7px 10px;
+        font-size: 1.0rem;
+    }
+    .signinput label{
         font-size: 1.0rem;
     }
     .search button{

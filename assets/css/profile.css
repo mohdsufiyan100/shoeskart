@@ -245,6 +245,14 @@ address{
         width: 6.0rem;
         font-size: 1.0rem;
     }
+    .formsuser{
+        position: relative;
+        left: 40%;
+        top: 50%;
+        transform: translate(-58%,  -60%);
+        font-size: 1.50rem;
+        margin-bottom: -40.0rem;
+    }
     .formsuser2{
         margin-top: 1.0rem;
         margin-left: 0.10rem;
@@ -255,11 +263,12 @@ address{
     }
     .forname{
         font-size: 1.0rem;
-        width: 17.0rem;
+        width: 16.0rem;
 
     }
     .addressbtn{
-        margin-right: -4.0rem;
+        margin-right: 0.0rem;
+        width: 10.0rem;
     }
     .tabcontent {
         padding: 40px 10px;
