@@ -246,9 +246,7 @@ Router.get('/shoeskart/addtocart/:id',auth, async(req, res) => {
 
 Router.get('/shoeskart/addtocart',auth, async(req, res) => {
     try {
-        // res.send(req.session.dataproduct)
         res.status(200).render('pages/addtocart.ejs', {cartdata: req.session.dataproduct});
-
     } catch (error) {
         res.status(500).send(error);
     }

@@ -66,26 +66,63 @@ button{
     background-color: red;
 
 }
-@media(max-width: 375px){
+@media screen and (max-width: 475px){
     .addproductform{
-        margin-top: 6.0rem;
+        margin-left: 20.0rem;
+        margin-top: 8.0rem;
         margin-bottom: 6.0rem;
     
     }
     .addproductlist{
-        background-color: wheat;
-        margin: auto;
-        width: 25.0rem;
+        width: 60.0rem;
         padding: 2.0rem;
     }
-    .addproductlist h1{
-        margin-left: 5.0rem;
+    .prodetail{
+        font-size: 3.0rem;
     }
+    
     #discription{
-        width: 21.0rem;
+        width: 50.0rem;
     }
     .addproductbtn{
         margin-left: 3.0rem;
+        font-size: 3.0rem;
+    }
+    .forcancel{
+        font-size: 3.0rem;
+    }
+    .addproductlist h1{
+        margin-left: 20.0rem;
+        font-size: 3.0rem;
+    }
+}
+@media(max-width: 375px){
+    .addproductform{
+        margin-left: 0.0rem;
+        margin-top: 6.0rem;
+        margin-bottom: 0.0rem;
+    
+    }
+    .addproductlist{
+        width: 25.0rem;
+        padding: 2.0rem;
+    }
+    .prodetail{
+        font-size: 1.20rem;
+    }
+    #discription{
+        width: 20.0rem;
+    }
+    .addproductbtn{
+        margin-left: 3.0rem;
+        font-size: 1.20rem;
+    }
+    .forcancel{
+        font-size: 1.0rem;
+    }
+    .addproductlist h1{
+        margin-left: 6.0rem;
+        font-size: 1.20rem;
     }
 
 }

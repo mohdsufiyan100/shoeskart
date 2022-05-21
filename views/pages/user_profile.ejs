@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div id="userform" class="formsuser">
+      <div id="userform" class="formsuser2">
         <form action="/shoeskart/edituserinfo/<%= profile._id %>?_method=PUT" method="post">
           <h2>Update user info</h2>
           <div class="addressname1">
@@ -85,7 +85,7 @@
 
       </div>
 
-      <div class="formsuser" id="forpasswordupdate">
+      <div class="formsuser2" id="forpasswordupdate">
         <form action="/shoeskart/passwordchange/<%= profile._id %>?_method=PUT" method="post">
           <h2>Change password</h2>
           <div class="addressname1">
@@ -121,9 +121,9 @@
                   <br>Mobile No.: <%= profile.address[0].phoneaddress %>
           </p>
         </address>
-        <button id="editbtn">Edit</button>
+        <button id="editbtn" class="addressbtn">Edit</button>
       </div>
-      <div id="addressformedit" class="formsuser">
+      <div id="addressformedit" class="formsuser2">
             
           <form action="/shoeskart/editdata/<%= profile._id %>?_method=PUT" method="post">
           <h3>Update Your Address</h3>
