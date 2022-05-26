@@ -23,14 +23,11 @@ html{
 }
 .headerlogo{
     display: flex;
-    margin-left: 40.0rem;
-    padding-top: 2.0rem;
+    margin-left: 45.0rem;
+    padding-top: 1.0rem;
 }
-.headerlogo a{
-    color: black;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.7rem;
-    text-decoration: none;
+.logoimage{
+    width: 15.0rem;
 }
 .forloginlogo a{
     color: black;
@@ -383,8 +380,7 @@ html{
 }
 .productimg{
    width: 15.0rem;
-   width: 10.0rem;
-   padding: 2.0rem;
+   padding: 1.0rem;
 }
 .productcarddis{
     margin-top: 15.0rem;
@@ -959,11 +955,10 @@ html{
     .headerlogo{
         display: flex;
         margin-left: 1.0rem;
-        margin-top: -1.0rem;
+        margin-top: 1.0rem;
     }
-    .headerlogo a{
-        font-size: 3.0rem;
-
+    .logoimage{
+        width: 20.0rem;
     }
     .contactno{
         display: none;
@@ -1351,10 +1346,10 @@ html{
     .headerlogo{
         display: flex;
         margin-left: 1.0rem;
-        margin-top: -1.0rem;
+        margin-top: 0.30rem;
     }
-    .headerlogo a{
-        font-size: 0.90rem;
+    .logoimage{
+        width: 7.0rem;
     }
     #formobileview{
         width: 100vw;
@@ -1465,8 +1460,8 @@ html{
         margin-top: 0.0rem;
     }
     .productimg{
-       width: 8.0rem;
-       margin-left: 2.0rem;
+       width: 10.0rem;
+       margin-left: 1.0rem;
        padding: 0.30rem;
     }
     .productcarddis{
@@ -1478,13 +1473,14 @@ html{
     }
     .disscribe{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.0rem;
-        padding-left: 4.40rem;
+        font-size: 1.40rem;
+        padding-left: 0.0rem;
+        text-align: center;
         margin-top: -.40rem;
         
     }
     .price{
-        font-size: 1.30rem;
+        font-size: 1.0rem;
         padding-left: 4.80rem;
         margin-top: 1.0rem;
         margin-bottom: 1.10rem;

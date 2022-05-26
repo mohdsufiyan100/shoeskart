@@ -33,7 +33,7 @@ html{
 }
 #ourteam{
     display: flex;
-    margin: -3.0rem auto;
+    margin: -1.0rem auto;
     width: 70.0rem;
     border-radius: 0.30rem;
     padding: 1.0rem;
@@ -55,18 +55,20 @@ html{
 }
 .profile{
     width: 12.0rem;
-    margin: auto; 
+    margin: -4.0rem auto; 
 }
-.profile img{
-    width: 7.0rem;
-    margin: auto;
+.profileimage img{
+    width: 10.0rem;
+    height: 10.0rem;
     display: flex;
     clip-path: circle(30% at 50% 30%);
 }
-.profile p{
-    width: 20.0rem;
-    margin: -4.0rem auto 1.0rem;
-    font-size: 1.0rem;
+.profilename{
+    width: 10rem;
+    text-align: center;
+    font-size: 1.20rem;
+    margin-top: -3.0rem;
+    margin-bottom: 6.0rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 span{
@@ -168,7 +170,7 @@ span{
     }
     .aboutteam{
         margin-left: 1.0rem;
-        width: 30.0rem;
+        width: 100.0rem;
     }
     .supportbaar{
         margin: 5.0rem;
@@ -193,22 +195,21 @@ span{
         font-size: 2.0rem;
     }
     .profile{
-        display: block;
-        text-align: center;
-        width: 24.0rem; 
-        margin:auto; 
+        width: 12.0rem;
+        margin: -4.0rem auto; 
     }
-    .profile img{
-        width: 7.0rem;
-        margin: auto;
+    .profileimage img{
         display: flex;
+        margin-left: 1.0rem;
         clip-path: circle(30% at 50% 30%);
     }
-    .profile p{
-        width: 30.0rem;
-        margin: -4.0rem -3.0rem 1.0rem;
+    .profilename{
+        width: 16.0rem;
+        text-align: center;
         font-size: 2.0rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: -2.0rem;
+        margin-left: -2.0rem;
+        margin-bottom: 7.0rem;
     }
 }
 @media(max-width: 375px){
@@ -273,10 +274,7 @@ span{
     .teamheader{
         font-size: 1.0rem;
         width: 10.0rem;
-        margin: -8.0rem auto 4.0rem;
-        /* margin-left: 0.0rem;
-        margin-top: -9.0rem;
-        margin-bottom: 4.0rem; */
+        margin: -8.0rem auto 0.0rem;
     }
     #ourteam{
 
@@ -284,10 +282,10 @@ span{
         width: 0.0rem;        
     }
     .aboutteam{
-        margin-left: -14.0rem;
-        margin-top: 1.0rem;
+        margin-left: -12.0rem;
+        margin-top: 5.0rem;
         margin-bottom: 2.0rem;
-        width: 25.0rem;
+        width: 20.0rem;
     }
     .supportbaar{
         margin: 5.0rem;
@@ -311,27 +309,26 @@ span{
         padding-right: 1.0rem;
     }
     .intro{
-        margin-left: 2.0rem;
+        margin-left: 0.0rem;
         width: 20.0rem;
         font-size: 1.0rem;
     }
     .profile{
-        display: block;
-        text-align: center;
-        width: 24.0rem; 
-        margin:auto; 
+        width: 12.0rem;
+        margin: -4.0rem auto; 
     }
-    .profile img{
-        width: 7.0rem;
-        margin: auto;
+    .profileimage img{
         display: flex;
+        margin-left: 1.0rem;
         clip-path: circle(30% at 50% 30%);
     }
-    .profile p{
-        width: 30.0rem;
-        margin: -4.0rem -3.0rem 1.0rem;
-        font-size: 2.0rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .profilename{
+        width: 16.0rem;
+        text-align: center;
+        font-size: 1.10rem;
+        margin-top: -3.0rem;
+        margin-left: -2.0rem;
+        margin-bottom: 5.0rem;
     }
     
 }
