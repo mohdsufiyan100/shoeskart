@@ -1,0 +1,285 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-size: 80%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.tab {
+    /* overflow: hidden; */
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+    border-top-left-radius: 1.0rem;
+    border-bottom-left-radius: 1.0rem;
+    height: 30.0rem;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+    text-align: left;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1.60rem;
+    border-top-left-radius: 1.0rem;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    /* margin-top: -80px; */
+    display: none;
+    margin-top: -50px;
+    padding: 40px 100px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+}
+.tabdata {
+    display: flex;
+    flex-direction: column;
+}
+.forlable {
+    color: rgb(8, 8, 8);
+    font-size: 1.40rem;
+    margin-top: 1.40rem;
+}
+.savebtn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1.0rem 2.0rem;
+    border-radius: 0.40rem;
+}
+.inputvalue{
+    font-size: 1.20rem;
+}
+.tabtn{
+    margin-top: 4.0rem;
+}
+.container {
+    display: flex;
+    margin-top: 10.0rem;
+    margin-bottom: 10.0rem;
+    margin-left: 10.0rem;
+}
+.forname{
+    /* background-color: wheat; */
+    border: 1px solid black;
+    border-radius: 0.30rem;
+    width: 30.0rem;
+}
+
+.addressname1{
+    display: flex;
+    flex-direction: column;
+}
+
+#addressform{
+    margin-top: 7.0rem;
+    margin-left: 35.0rem;
+    margin-bottom: 7.0rem;
+    display: inline-block;
+    padding: 2.0rem;
+    background-color: rgb(236, 235, 235);
+}
+.formsuser{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,  -50%);
+    background-color: rgb(236, 235, 235);
+    padding: 3.0rem;
+}
+.loginorsignoutbanner{
+    margin-left: 10.0rem;
+    margin-top: 5.0rem;
+}
+.loginorsignoutbanner h1{
+    margin-bottom: 2.0rem;
+    margin-left: 5.0rem;
+
+}
+.formcontent{
+    overflow-y: scroll;
+    height: 30.0rem;
+}
+.addressbtn{
+    border-radius: 0.30rem;
+    margin-top: 2.0rem;
+}
+.styling{
+    margin-left: 10.0rem;
+    width: 40.0rem;
+}
+.containerdata{
+    border-radius: 1.0rem;
+    background-color: white;
+    padding: 2.0rem;
+    box-shadow: 1px 1px 7px 2px yellowgreen;
+}
+address{
+    padding: 3.0rem;
+    font-size: 2.0rem;
+}
+
+.passwordcurren{
+    margin-top: 3.0rem;
+}
+
+
+/* ---------------media quary for responsive web---------------- */
+@media screen and (max-width: 475px){
+    .container {
+        margin-left: 0.0rem;
+        margin-bottom: 20.0rem;
+    }
+    .tab {
+        height: 20.0rem;
+    }
+    .tab button {
+        padding: 14px 14px;
+        width: 30.0rem;
+        transition: 0.3s;
+        font-size: 3.0rem;
+    }
+    .formsuser{
+        position: relative;
+        left: 40%;
+        top: 50%;
+        transform: translate(-58%,  -64%);
+        font-size: 1.50rem;
+        margin-bottom: -90.0rem;
+    }
+    .formsuser2{
+        margin-top: 4.0rem;
+        margin-left: 4.0rem;
+        font-size: 1.50rem;
+    }
+    .forlable {
+        font-size: 2.0rem;
+    }
+    .forname{
+        font-size: 2.0rem;
+        width: 30.0rem;
+
+    }
+    .styling{
+        margin-left: 4.0rem;
+        font-size: 3.0rem;
+        width: 50.0rem;
+    }
+    .inputvalue{
+        font-size: 3.0rem;
+    }
+    .edituserbtn{
+        font-size: 3.0rem;
+    }
+    .addressbtn{
+        margin-right: -2.0rem;
+    }
+    .savebtn{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 0.50rem 1.0rem;
+        margin-left: 1.0rem;
+        border-radius: 0.40rem;
+    }
+    address{
+        padding: 1.0rem;
+        font-size: 3.0rem;
+        width: 50.0rem;
+    }
+    .formcontent{
+        overflow-y: scroll;
+        height: 30.0rem;
+    }
+}
+
+
+@media(max-width: 375px){
+    .container {
+        margin-top: 3.30rem;
+        margin-left: 1.0rem;
+        margin-bottom: 20.0rem;
+    }
+    .tab {
+        height: 30.0rem;
+    }
+    .tab button {
+        padding: 14px 9px;
+        width: 8.0rem;
+        font-size: 1.0rem;
+    }
+    .styling{
+        margin-left: 1.0rem;
+        font-size: 1.0rem;
+        width: 14.0rem;
+    }
+    .inputvalue{
+        font-size: 1.0rem;
+    }
+    .edituserbtn{
+        width: 6.0rem;
+        font-size: 1.0rem;
+    }
+    .formsuser{
+        position: relative;
+        left: 40%;
+        top: 50%;
+        transform: translate(-58%,  -60%);
+        font-size: 1.50rem;
+        margin-bottom: -40.0rem;
+    }
+    .formsuser2{
+        margin-top: 1.0rem;
+        margin-left: 0.10rem;
+        font-size: 1.50rem;
+    }
+    .forlable {
+        font-size: 1.0rem;
+    }
+    .forname{
+        font-size: 1.0rem;
+        width: 16.0rem;
+
+    }
+    .addressbtn{
+        margin-right: 0.0rem;
+        width: 10.0rem;
+    }
+    .tabcontent {
+        padding: 40px 10px;
+    }
+    address{
+        padding: 0.0rem;
+        font-size: 1.0rem;
+        width: 14.0rem;
+    }
+    .formcontent{
+        overflow-y: scroll;
+        height: 24.0rem;
+    }
+}

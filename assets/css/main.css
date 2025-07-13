@@ -1,0 +1,1552 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+::-webkit-scrollbar{
+    width: 0.80rem;
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 0.20rem
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(199, 199, 199); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(131, 131, 131); 
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+.headerlogo{
+    display: flex;
+    margin-left: 45.0rem;
+    padding-top: 1.0rem;
+}
+.logoimage{
+    width: 15.0rem;
+}
+.forloginlogo a{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+}
+.forloginlogo{
+    padding-top: 2.0rem;
+
+}
+
+.contactno{
+    margin-left: 4.0rem;
+    margin-top: -2.0rem;
+    font-size: 1.2rem;
+}
+.contactno a{
+    
+    text-decoration: none;
+    color: black;
+}
+.contactno a i{
+   margin: .40rem;
+}
+.search{
+    font-size: 1.40rem;
+    margin-top: -1.0rem;
+    /* display: inline-flex; */
+}
+.headinfo{
+    /* display: inline-flex; */
+    float: right;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 6rem;
+    margin-top: -2rem;
+}
+.headinfo div{
+    margin-left: 1.0rem;
+}
+.search button{
+    font-size: 1.20rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#search{
+    display: inline-flex;
+    /* flex-direction: row;  */
+}
+#searchinput{
+    border: none;
+    border: 2px solid green;
+    outline: none;
+    padding-left: .70rem;
+    color: black;
+    font-size: 1.20rem;
+    border-radius: 1.0rem;
+    display: none;
+    width: 200px;
+    animation: 2s search;
+}
+@keyframes search{
+    0%{
+        width: 0px;
+    }
+    70%{
+        width: 200px;
+    }
+
+}
+
+#basket{
+    font-size: 1.20rem;
+    cursor: pointer;
+}
+#basket a{
+    color: black;
+}
+#addtocart{
+    margin-bottom: -5px;
+    margin-left: 20px;
+    font-size: 1.50rem;
+    padding: 2px 10px;
+    border-radius: 30px
+}
+#register{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#register a{
+   text-decoration: none;
+   color: black;
+}
+#responsive{
+    display: none;
+}
+.menubaar{
+    padding-left: 15.0rem;
+    padding-top: 2.0rem;
+    animation: 1s menubaar;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 11%;
+    font-size: 1.40rem;
+    animation: 3s menubaar;
+}
+#formobileview{
+    display: none;
+}
+@keyframes menubaar{
+    0%{
+        padding-left: 0.0rem;
+    }
+    70%{
+        padding-left: 15.0rem;
+    }
+}
+.menubaar ul li{
+    display:inline-flex;
+    margin-left: 3.90rem;
+    margin-top: -1.0rem;
+    cursor: pointer;
+    padding: .60rem;
+}
+.salelink{
+    text-decoration-line: none;
+    color: black;
+}
+.fa-user{
+    margin-right: 0.50rem;
+}
+#user_ul{
+    display: none;
+    margin-top: 0.20rem;
+}
+#user_ul ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    border: 0.03rem solid black;
+}
+#user_ul ul li{
+    padding: 0.80rem;
+}
+#user_ul ul li:hover{
+    background-color: lightgray;
+}
+.menubaar ul li:hover{
+    background-color:yellowgreen;
+}
+#categorylist{
+    background-color: white;
+    position: absolute;
+    top: 99%;
+    left: 37.0%;
+    width: 15.0rem;
+    box-shadow: 0.0rem 0.0rem 0.3rem 0.05rem black;
+}
+#categorylistbig{
+    background-color: white;
+    position: absolute;
+    top: 99%;
+    left: 37.0%;
+    width: 12.0rem;
+    box-shadow: 0.0rem 0.0rem 0.3rem 0.05rem black;
+}
+.category:hover #category-arrow{
+    transform: rotate(180deg);
+}
+@keyframes fru{
+    0%{
+        margin-top: -2.0px;
+    }
+    10%{
+        margin-top: 1.0px;
+    }
+}
+#categorylist ul li{
+    width: 10.0rem;
+    margin-left: 1.0rem;
+    margin-top: 1.0rem;
+    padding: 0.50rem;
+    cursor: pointer;
+    animation: .31s ease fru;
+}
+#categorylist i ,.fa{
+    margin-left: .30rem;
+}
+#categorylistbig ul li{
+    width: 10.0rem;
+    margin-left: 1.0rem;
+    margin-top: 1.0rem;
+    padding: 0.50rem;
+    cursor: pointer;
+    animation: .31s ease fru;
+}
+#categorylistbig i ,.fa{
+    margin-left: .30rem;
+}
+.forlihover:hover{
+    background-color: yellowgreen;
+}
+.left{
+    width: 35.0rem; 
+    height: 15.0rem;
+    margin-top: 20.0rem;
+    margin-left: 0.30rem;
+    border-bottom-right-radius: 10.0rem;
+    border-top-right-radius: 10.0rem;
+    background-color: rgb(83, 212, 216);
+    box-shadow: 1px 1px 7px 2px yellowgreen;
+}
+.right{
+    width: 35.0rem; 
+    height: 15.0rem;
+    margin-top: -30.0rem;
+    margin-left: 70.50rem;
+    border-bottom-left-radius: 10.0rem;
+    border-top-left-radius: 10.0rem;
+    background-color: rgb(83, 212, 216);
+    box-shadow: 1px 1px 7px 2px yellowgreen;
+
+}
+
+.banner{
+    margin-top: 23.0rem;
+    margin-bottom: 20.0rem;
+}
+
+.bannerimg{
+    width: 14.0rem;
+}
+#bann1{
+    margin-left: 16.0rem;
+    transform: rotateY(200deg);
+    filter: drop-shadow(3px 1px 20px black);
+}
+#bann2{
+    margin-left: 4.0rem;
+    margin-top: 2.0rem;
+    transform: rotateY(200deg);
+    filter: drop-shadow(3px 1px 20px black);
+}
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.90rem;
+    margin-left: 40.0rem;
+    margin-top: -10.0rem;
+    animation: 2s heading;
+    text-shadow: 2px 2px 5px rgb(123, 163, 142);
+}
+@keyframes heading{
+    from{
+        left: -10%;
+    }
+}
+.heading button{
+    background-color: yellowgreen;
+    font-size: 1.80rem;
+    padding: 1.0rem 2.0rem;
+    border: none;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    margin-left: 5.0rem;
+    margin-top: 2.0rem;
+    cursor: pointer;
+    box-shadow: 3px 2px 5px rgb(123, 163, 142);
+    animation: 3s buttonanimation;
+    transition: .30s;
+}
+.heading button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .20s;
+}
+@keyframes buttonanimation{
+    0%{
+        border: 2px solid rgb(207, 221, 21);
+    }
+    100%{
+        border: 2px solid rgb(21, 195, 143);
+    }
+}
+.products{
+    margin-top: 15.0rem;
+    /* margin-bottom: -80.0rem; */
+    /* width: 250px;
+    height: 600px;
+    margin-top: 12.0rem;
+    margin-bottom: 0.0rem; */
+    /* padding-bottom: 50.0rem; */
+}
+.ourprd{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: -4.55rem auto;
+    width: 20.0rem;
+    display: block;
+}
+.filter{
+    margin: 2.0rem auto;
+    width: 31.0rem;
+    float: right;
+    display: flex;
+}
+.filter button{
+    padding: .70rem 1.40rem .70rem 1.40rem;
+    font-size: 1.20rem;
+    margin-left: 1.0rem;
+    border: none;
+}
+.feature{
+    background-color: yellowgreen;
+}
+.filter button:hover{
+    background-color: yellowgreen;
+}
+#productcontainer{
+    margin-bottom: 12.0rem;
+    background-color: white;
+    margin-top: 3.0rem;
+    margin-left: 10.0rem;
+    display: grid;
+    width: 90.0rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1.0rem;
+    /* column-gap: -4.0rem; */
+}
+.productcard{
+    background: rgb(2,0,36);
+    background: linear-gradient(-10deg, rgb(255, 255, 255) 10%, rgb(83, 212, 216) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+}
+.productcard:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.productimg{
+   width: 15.0rem;
+   padding: 1.0rem;
+}
+.productcarddis{
+    margin-top: 15.0rem;
+}
+.productcard img{
+    /* width: 25.70rem;
+    height: 18.0rem; */
+    position: absolute;
+    /* margin-left: -5.0rem;
+    margin-right: -5.0rem; */
+}
+.disscribe{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 4.0rem;
+    margin-top: -.40rem;
+    
+}
+.price{
+    font-size: 1.30rem;
+    padding-left: 4.80rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.10rem;
+}
+.addtocartdisplay{
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.10rem;
+    margin-top: 2.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.addtocartdisplay:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.onsale{
+    margin-left: -10.0rem;
+    margin-top: 46.0rem;
+    margin-bottom: -25.0rem;
+
+}
+.saleheading{
+    width: 7.0rem;
+    margin: auto;
+}
+.saleheading h1{
+    animation: 3s sale infinite;
+    /* color: black; */
+    width: 9.0rem;
+    border-radius: 10px;
+    margin-left: 5.0rem;
+}
+@keyframes sale{
+    0%{
+        color: rgb(162, 29, 196);
+    }
+    10%{
+        color: yellowgreen;
+    }
+    20%{
+        color: yellow;
+    }
+    30%{
+        color: rgb(31, 164, 216);
+    }
+    40%{
+        color: rgb(155, 66, 14);
+    }
+    50%{
+        color: rgb(223, 20, 179);
+    }
+    60%{
+        color: rgb(42, 248, 255);
+    }
+    70%{
+        color: rgb(199, 18, 18);
+    }
+    80%{
+        color: rgb(56, 8, 8);
+    }
+    90%{
+        color: rgb(85, 107, 7);
+    }
+    100%{
+        color: rgb(18, 175, 13);
+    }
+    
+}
+.saleproduct1{
+    width: 23.0rem;
+    padding: 1.0rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-flex;
+    align-items: stretch;
+    margin: auto;
+    box-shadow: 0px 1px 10px 1px black;
+    border-radius: 0.80rem;
+    border: 0.30rem solid yellowgreen;
+}
+.imgcontainer{
+    display: inline-flex;
+    margin-right: 1.0rem;
+}
+.saleproductdis1{
+    float: right;
+    /* margin-top: 2.0rem; */
+    margin-right: 2.0rem;
+    text-align: center;
+}
+.saleproductdis1 p{
+    margin-top: .60rem;
+}
+.saleproductdis1 button{
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+    margin-top: .40rem;
+}
+.saleproduct1 img{
+    width: 10.0rem;
+    display: inline-flex;
+    /* margin: 2.0rem auto; */
+}
+
+.saleproduct2{
+    position:absolute;
+    top: 20%;
+    left: 68%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis2{
+    float: right;
+    margin-top: 2.0rem;
+    margin-right: 2.0rem;    
+    text-align: center;
+}
+.saleproductdis2 p{
+    margin-top: .60rem;
+}
+.saleproductdis2 button{
+    margin-top: .40rem;
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+}
+.saleproduct2 img{
+    position:absolute;
+    left: 20%;
+    top: 80%;
+    width: 22.0rem;
+    height: 17.0rem;
+}
+
+.saleproduct3{
+    position: absolute;
+    top: 60%;
+    left: 68%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis3{
+    float: right;   
+    margin-top: 2.0rem; 
+    margin-right: 2.0rem;
+    text-align: center;
+}
+.saleproductdis3 p{
+    margin-top: .60rem;
+}
+.saleproductdis3 button{
+    margin-top: .40rem;
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+}
+.saleproduct3 img{
+    position: absolute;
+    left: -40%;
+    top: -150%;
+    width: 22.0rem;
+    height: 17.0rem;
+}
+
+.saleproduct4{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis4{
+    float: right;   
+    margin-top: 2.0rem;
+    margin-right: 2.0rem; 
+    text-align: center;
+}
+.saleproductdis4 p{
+    margin-top: .60rem;
+}
+.saleproductdis4 button{
+    margin-top: .40rem;
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+}
+.saleproduct4 img{
+    position: absolute;
+    left: -1%;
+    top: 6%;
+    width: 15.0rem;
+    height: 11.0rem;
+}
+#footer{
+    position: relative;
+    font-size: 1.30rem;
+    /* margin-top: 20.0rem; */
+    /* margin-top: .0rem; */
+    background-color: rgb(14, 13, 13);
+    color: white;
+    width: 100%;
+    height: 70vh;
+}
+.footerinput{
+    display: flex;
+    margin: auto;
+    width: 600px;
+    padding-top: 2.0rem;
+}
+.footerinput input{
+    font-size: 1.50rem;
+    border: 2px solid yellowgreen;
+    outline: none;
+    border-radius: 5px;
+    padding: 0rem 5.40rem .0rem 1.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footerinput button{
+    padding: .70rem 2.0rem;
+    font-size: 1.50rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+    margin-left: .40rem;
+    transition: all .50s;
+    cursor: pointer;
+}
+.footerinput button:hover{
+    background-color: yellowgreen;
+    color: white;
+    transition: all .50s;
+}
+.footerdata{
+    display: flex;
+    margin-top: 5.0rem;
+    margin-left: 20.0rem;
+}
+.footermenu{
+    /* position: absolute;
+    left: 45%;
+    top: 30%; */
+    margin-right: 10.0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .10rem;
+}
+.footermenu ul{
+    margin-top: 1.50rem;
+}
+.footermenu ul li{
+   display: block;
+   margin-top: .50rem;
+   padding: .5rem;
+   cursor: pointer;
+
+}
+.footermenu ul li:hover{
+    color: yellowgreen;
+}
+
+.footerservice{
+    /* position: absolute;
+    left: 68%;
+    top: 30%; */
+    margin-right: 10.0rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .10rem;
+    /* display: flex; */
+}
+.footerservice ul{
+    margin-top: 1.50rem;
+}
+.footerservice ul li{
+   display: block;
+   margin-top: .50rem;
+   padding: .5rem;
+   cursor: pointer;
+}
+.footerservice a{
+    text-decoration: none;
+    color: white;
+}
+.footerservice ul li:hover{
+    color: yellowgreen;
+}
+.footercontact{
+    /* position: absolute;
+    left: 20%;
+    top: 30%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .10rem;
+    /* display: flex; */
+}
+.contN{
+    text-decoration: none;
+    color: white;
+    margin-left: -3.0rem;
+}
+.footercontact ul{
+    margin-top: 1.50rem;
+}
+.footercontact ul li{
+   display: block;
+   margin-left: -3.50rem;
+   margin-top: .0rem;
+   padding: .5rem;
+   cursor: pointer;
+
+}
+.footercontact ul li:hover{
+    color: yellowgreen;
+}
+.socialicon{
+    margin-left: -1.20rem;
+    margin-top: 1.40rem;
+}
+.socialicon .fa{
+    background-color: transparent;
+    color: yellowgreen;
+    font-size: 1.80rem;
+    padding: 1.0rem;
+    border: 2px solid yellowgreen;
+    border-radius: 100px;
+    transition: all .60s;
+    cursor: pointer;
+}
+.socialicon .fa:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+#userid{
+    position: sticky;
+    left: 60%;
+    border-radius: 10px;
+    background: rgb(236, 235, 235);
+    color: black;
+    display: flex;
+    padding: 20px; 
+    width: 400px;
+    height: 450px;
+    margin-top: -37.0rem;
+    margin-bottom: 2.0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#login{
+    padding: 40px 80px;
+    animation: 1.0s loginanimation;
+}
+@keyframes loginanimation{
+    from{
+        transform:rotateX(90deg);
+    }
+}
+#login .loginput input{
+    margin-top: 30px;
+    padding: 10px 10px;
+    width: 230px;
+    background-color:transparent;
+    color: black;
+    border: none;
+    font-size: 1.10rem;
+    border-bottom: 1px solid black;
+    /* border: none; */
+    outline: none;
+}
+#login button{
+    width: 250px;
+    height: 40px;
+    font-size: 1.10rem;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    border: none;
+    outline: none;
+}
+.loginput label{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding: 40px 6px;
+    transition: all .50s;
+    pointer-events: none;
+}
+#login .loginput input:focus ~ label,
+#login .loginput input:valid ~ label
+{
+    top: -40%;  
+    left: -2%; 
+    color: rgb(12, 122, 122);
+}
+#login .loginput{
+    position: relative;
+}
+#log0{
+    text-align: center;
+    margin-bottom: -4px;
+}
+#forsignup{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+#signup{
+    padding: 0px 80px;
+    animation: 1.0s signupanimation;
+}
+@keyframes signupanimation{
+    from{
+        transform:rotateX(90deg);
+    }
+}
+
+
+
+
+#signup .signinput input{
+    margin-top: 30px;
+    padding: 10px 10px;
+    width: 230px;
+    background-color:transparent;
+    color: black;
+    border: none;
+    font-size: 1.10rem;
+    border-bottom: 1px solid black;
+    /* border: none; */
+    outline: none;
+}
+#signup button{
+    width: 250px;
+    height: 40px;
+    font-size: 1.10rem;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    border: none;
+    outline: none;
+}
+.signinput label{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding: 40px 6px;
+    transition: all .50s;
+    pointer-events: none;
+}
+#signup .signinput input:focus ~ label,
+#signup .signinput input:valid ~ label
+{
+    top: -40%;  
+    left: -2%; 
+    color: rgb(12, 122, 122);
+}
+#signup .signinput{
+    position: relative;
+}
+#forlogin{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes quentity{
+    from{
+        margin-top: 1.50rem;
+    }
+}
+.fa-plus{
+    padding: 0.20rem;
+    border-radius: 10.0rem;
+    background-color: rgb(211, 208, 208);
+}
+.fa-minus{
+    padding: 0.20rem;
+    border-radius: 10.0rem;
+    background-color: rgb(211, 208, 208);
+}
+.iconhover:hover{
+    background-color: black;
+    color: white;
+}
+
+#onsalebanner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2.0rem;
+    margin-left: -32.0rem;
+    column-gap: 1.50rem;
+    margin-top: 1.50rem;
+}
+
+/* ---------------media quary for responsive web---------------- */
+@media screen and (max-width: 475px) {
+    .headinfo{
+        margin-right: -60rem;
+        margin-top: -2rem;
+    }
+
+
+    #basket{
+        font-size: 3.0rem;
+    }
+    #register{
+        font-size: 3.0rem;
+    }
+    #responsive{
+        display: block;
+    }
+    #res{
+        background-color: transparent;
+        font-size: 3.0rem;
+
+    }
+    .headerlogo{
+        display: flex;
+        margin-left: 1.0rem;
+        margin-top: 1.0rem;
+    }
+    .logoimage{
+        width: 20.0rem;
+    }
+    .contactno{
+        display: none;
+    }
+    .search button{
+        font-size: 3.0rem;
+        margin-right: -0.30rem;
+    }
+    .menubaar{
+        display: none;
+    }
+
+
+    #formobileview{
+        display: block;
+        width: 280vw;
+        height: 90vh;
+        margin-left: 2.0rem;
+        margin-top: 4.0rem;
+        background-color: white;
+        border: 0.20rem solid black;
+        border: none;
+        font-size: 3.0rem;
+        overflow-y: auto;
+        animation: 1s formobilemanu;
+    }
+    @keyframes formobilemanu {
+        from{
+            height: 0vh;
+        }
+        to{
+            height: 90vh;
+        }
+    }
+    #categorylist{
+        position: relative;
+        left: 5%;
+        background-color: transparent;
+        box-shadow: none;
+        text-align: left;
+    }
+    #categorylist ul li{
+        width: 20.0rem;
+        margin-left: 1.0rem;
+        margin-top: 2.0rem;
+        cursor: pointer;
+    }
+    .menusocialicon{
+        text-align: center;
+        font-size: 2.0rem;
+        margin-top: 2.0rem;
+    }
+    .menusocialicon a{
+        text-decoration: none;
+        color: black;
+    }
+    .menuservises{
+        text-align: center;
+        margin-top: 2.0rem;
+    }
+    .menuservises a{
+        text-decoration: none;
+        color: black;
+        margin-left: 1.0rem;
+        font-size: 2.0rem;
+    }
+    #menubaarformobile ul li{
+        padding: 1.0rem 1.0rem;
+    }
+    #menubaarformobile ul li:hover{
+        background-color: rgba(197, 192, 192, 0.418);
+    }
+    li{
+        list-style: none;
+        margin-top: 2.0rem;
+    }
+
+    .heading h2{
+        font-size: 3.0rem;
+        text-align: center;
+    }
+    .heading{
+        margin-top: -14.0rem;
+        margin-right: -40.0rem;
+        margin-left: 30.0rem;
+    }
+    .heading button{
+        font-size: 3.0rem;
+        padding: 1.0rem 1.50rem;
+        margin-left: 15.0rem;
+        margin-top: 2.0rem;
+    }
+
+
+    .products{
+        margin-top: -8.0rem;
+    }
+    .products_filter{
+        display: flex;
+        flex-direction: column;
+        margin-left: 35.0rem;
+        margin-top: 25.0rem;
+    }
+    .ourprd{
+        margin: -4.55rem auto;
+        width: 35.0rem;
+        display: block;
+        font-size: 3.0rem;
+    }
+    .filter{
+        margin: 2.0rem auto;
+        width: 31.0rem;
+        margin-left: -4.0rem;
+        margin-top: 2.0rem;
+    }
+    .filter button{
+        padding: .70rem 1.40rem .70rem 1.40rem;
+        font-size: 3.0rem;
+        margin-left: 1.0rem;
+        margin-top: 4.0rem;
+        border: none;
+    }
+    #productcontainer{
+        margin-bottom: 12.0rem;
+        background-color: white;
+        margin-top: 0.0rem;
+        margin-left: 2.0rem;
+        display: grid;
+        width: 30.0rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 1.0rem;
+    }
+    .productcard{
+        width: 30.0rem;
+        height: 43.0rem;
+        margin-left: 3.0rem;
+        margin-top: 3.0rem;
+    }
+    .productimg{
+       width: 23.0rem;
+       margin-left: 2.0rem;
+       padding: 0.30rem;
+    }
+    .productcarddis{
+        margin-top: 23.0rem;
+        margin-left: 2.0rem;
+    }
+    .productcard img{
+        position: absolute;
+    }
+    .disscribe{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3.0rem;
+        padding-left: 4.40rem;
+        margin-top: -.40rem;
+        
+    }
+    .price{
+        font-size: 3.0rem;
+        padding-left: 4.80rem;
+        margin-top: 1.0rem;
+        margin-bottom: 1.10rem;
+    }
+    .addtocartdisplay{
+        font-size: 3.0rem;
+        margin-left: 3.0rem;
+        margin-top: 2.0rem;
+    }
+
+    /*--------------- for footer --------------------- */
+
+    #footer{
+        font-size: 3.0rem;
+        margin-top: 20.0rem;
+        width: 280%;
+        height: 100vh;
+    }
+    .footerinput{
+        width: 480px;
+        padding-top: 2.0rem;
+    }
+    .footerinput input{
+        padding: 0rem 1.0rem .0rem 1.0rem;
+        width: 30.0rem;
+        font-size: 3.0rem;
+    }
+    .footerinput button{
+        padding: 1.50rem 1.0rem;
+        font-size: 3.0rem;
+    }
+    .footerdata{
+        margin-top: 2.0rem;
+        margin-left: 1.0rem;
+    }
+    .footermenu{
+        margin-right: 0.0rem;
+        margin-left: 3.0rem;
+    }
+    .footermenu ul{
+        margin-right: 6.0rem;
+    }
+    .footerservice{
+        margin-left: 0.0rem;
+    }
+    .footerservice ul{
+        margin-top: 1.0rem;
+    }
+    .footerservice ul li{
+        width: 20.0rem;
+    }
+    .footercontact{
+        margin-left: 10.0rem;
+        margin-top: 0.0rem;
+    }
+    .footercontact ul li{
+        display: block;
+        margin-left: -3.0rem;
+        margin-top: .0rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+    #user_ul ul{
+        width: 22.0rem;
+        margin-left: -5.0rem;
+    }
+    #user_ul ul li{
+        padding: 2.0rem;
+        margin-top: 0.0rem;
+    }
+    .loginorsignoutbanner{
+        display: none;
+    }
+
+
+    #userid{
+        position: sticky;
+        left: 9%;
+        top: 30%;
+
+        width: 350px;
+        height: 550px;
+        margin-top: 2.0rem;
+        margin-right: 0.80rem;
+    }
+    #login{
+        font-size: 2.0rem;
+        padding: 100px 20px 80px 30px;
+    }
+    #signup .signinput input{
+        margin-top: 35px;
+        padding: 10px 10px;
+        font-size: 2.0rem;
+    }
+    .signinput label{
+        font-size: 2.0rem;
+    }
+    #sign0{
+        margin-bottom: 6.0rem;
+        margin-top: -5.0rem;
+        font-size: 3.0rem;
+    }
+    #f1{
+        margin-top: -7.0rem;
+    }
+    #login button{
+        width: 140px;
+        height: 50px;
+        font-size: 2.0rem;
+        margin-top: 20px;
+        margin-left: 0.0rem;
+        background-color: yellowgreen;
+        border: none;
+        outline: none;
+    }
+    .loginput label{
+        padding: 40px 6px;
+    }
+    #signup{
+        padding: 60px 20px 80px 30px;
+    }
+
+    #login .loginput input{
+        width: 280px;
+        font-size: 2.0rem;
+    }
+    
+
+  }
+
+
+@media(max-width: 375px){
+    html{
+        font-size: 55%;
+    }
+    #userid{
+        position: sticky;
+        left: 40%;
+        width: 300px;
+        height: 550px;
+        margin-top: 2.0rem;
+        margin-right: 0.80rem;
+    }
+    #login{
+        font-size: 1.0rem;
+        padding: 70px 10px 20px 0px;
+    }
+    .loginput label{
+        padding: 40px 6px;
+    }
+    #login .loginput input{
+        width: 280px;
+        font-size: 1.0rem;
+    }
+    #login button{
+        width: 90px;
+        height: 40px;
+        font-size: 1.0rem;
+        margin-top: 20px;
+        margin-left: 0.0rem;
+        background-color: yellowgreen;
+        border: none;
+        outline: none;
+    }
+    #signup{
+        padding: 60px 20px 80px 30px;
+        font-size: 1.0rem;
+    }
+    #sign0{
+        font-size: 2.0rem;
+    }
+    #signup .signinput input{
+        margin-top: 35px;
+        padding: 7px 10px;
+        font-size: 1.0rem;
+    }
+    .signinput label{
+        font-size: 1.0rem;
+    }
+    .search button{
+        font-size: 1.0rem;
+        margin-right: -2.40rem;
+    }
+    #searchinput{
+        margin-right: -2.0rem;
+        width: 20px;
+        animation: 2s search;
+    }
+    @keyframes search{
+        0%{
+            width: 0px;
+        }
+        70%{
+            width: 20px;
+        }
+    
+    }
+    .headinfo{
+        margin-right: 6rem;
+        margin-top: -2rem;
+    }
+    #basket{
+        padding: 0.30rem;
+        margin-right: -3.0rem;
+        margin-top: -0.20rem;
+        font-size: 1.0rem;
+    }
+    .basketa{
+        padding: 1.0rem;
+    }
+    #register{
+        font-size: 1.0rem;
+    }
+    #responsive{
+        margin-right: -6.0rem;
+        margin-left: -1.0rem;
+        margin-top: -1.0rem;
+        display: block;
+    }
+    #res{
+        background-color: transparent;
+        font-size: 1.0rem;
+
+    }
+    .headerlogo{
+        display: flex;
+        margin-left: 1.0rem;
+        margin-top: 0.30rem;
+    }
+    .logoimage{
+        width: 7.0rem;
+    }
+    #formobileview{
+        width: 100vw;
+        height: 70vh;
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 1.0rem;
+        animation: 1s formobilemanu;
+    }
+    @keyframes formobilemanu {
+        from{
+            height: 0vh;
+        }
+        to{
+            height: 70vh;
+        }
+    }
+
+    /*------ for banner ----------- */
+    .left{
+        width: 10.0rem; 
+        height: 7.0rem;
+        margin-top: 10.0rem;
+        margin-left: 0.0rem;
+    }
+    .right{
+        width: 10.0rem; 
+        height: 7.0rem;
+        margin-top: -14.0rem;
+        margin-left: 18.50rem;
+    }
+    .banner{
+        margin-top: 2.0rem;
+        margin-bottom: 15.0rem;
+    }
+    
+    .bannerimg{
+        width: 5.0rem;
+    }
+    #bann1{
+        margin-top: 1.0rem;
+        margin-left: 3.0rem;
+    }
+    #bann2{
+        margin-left: 1.0rem;
+        margin-top: 2.0rem;
+    }
+    .heading{
+        margin-top: -7.0rem;
+        margin-right: 10.0rem;
+        margin-left: 10.0rem;
+    }
+    .heading h2
+    {
+        font-size: 1.0rem;
+
+    }
+    .heading button{
+        font-size: 1.0rem;
+        padding:0.30rem 1.0rem;
+        margin-left: 1.0rem;
+        margin-top: 2.0rem;
+    }
+
+
+    /*------ for product ----------- */
+    .products{
+        margin-top: -8.0rem;
+    }
+    .products_filter{
+        margin-left: 10.0rem;
+        margin-top: 10.0rem;
+    }
+    .ourprd{
+        margin:auto;
+        width: 19.0rem;
+        display: block;
+        font-size: 1.0rem;
+    }
+    .filter{
+        margin: 1.0rem auto;
+        width: 10.0rem;
+        margin-left: -2.0rem;
+        margin-top: 0.0rem;
+    }
+    .filter button{
+        padding: .20rem 0.50rem .20rem 0.50rem;
+        font-size: 1.0rem;
+        margin-left: 0.40rem;
+        margin-top: 0.0rem;
+        border: none;
+    }
+    #productcontainer{
+        margin-bottom: 12.0rem;
+        background-color: white;
+        margin-top: 0.0rem;
+        margin-left: 2.0rem;
+        display: grid;
+        width: 26.0rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 1.0rem;
+    }
+    .productcard{
+        width: 12.0rem;
+        height: 20.0rem;
+        margin-left: 0.0rem;
+        margin-top: 0.0rem;
+    }
+    .productimg{
+       width: 10.0rem;
+       margin-left: 1.0rem;
+       padding: 0.30rem;
+    }
+    .productcarddis{
+        margin-top: 10.0rem;
+        margin-left: -1.0rem;
+    }
+    .productcard img{
+        position: absolute;
+    }
+    .disscribe{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.40rem;
+        padding-left: 0.0rem;
+        text-align: center;
+        margin-top: -.40rem;
+        
+    }
+    .price{
+        font-size: 1.0rem;
+        padding-left: 4.80rem;
+        margin-top: 1.0rem;
+        margin-bottom: 1.10rem;
+    }
+    .addtocartdisplay{
+        font-size: 1.0rem;
+        margin-left: 3.0rem;
+        margin-top: 2.0rem;
+    }
+
+    /*--------------- for footer --------------------- */
+
+    #footer{
+        font-size: 1.30rem;
+        width: 100%;
+        height: 100vh;
+    }
+    .footerinput{
+        width: 280px;
+        padding-top: 2.0rem;
+    }
+    .footerinput input{
+        padding: 0rem 1.0rem .0rem 1.0rem;
+        width: 15.0rem;
+        font-size: 1.0rem;
+    }
+    .footerinput button{
+        padding: .50rem 1.0rem;
+        font-size: 1.0rem;
+    }
+    .footerdata{
+        margin-top: 2.0rem;
+        margin-left: 0.0rem;
+    }
+    .footermenu{
+        margin-right: -3.0rem;
+    }
+    .footermenu ul{
+        margin-right: 6.0rem;
+    }
+    .footerservice ul{
+        margin-top: 1.0rem;
+    }
+    .footerservice ul li{
+        width: 10.0rem;
+    }
+    .footercontact{
+        margin-left: -32.0rem;
+        margin-top: 20.0rem;
+    }
+    .footercontact ul li{
+        display: block;
+        margin-left: -3.0rem;
+        margin-top: .0rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+    #user_ul ul{
+        width: 6.0rem;
+        margin-left: -1.0rem;
+    }
+    #user_ul ul li{
+        padding: 0.40rem;
+        margin-top: 0.0rem;
+    }
+}
+
+
+  

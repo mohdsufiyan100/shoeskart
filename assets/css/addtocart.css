@@ -1,0 +1,312 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    font-size: 80%;
+}
+
+.containeraddtocart{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20.0rem;
+    height: 20.0rem;
+    color: black;
+    background-color: green;
+}
+
+#displayCart{
+    color: black;
+    width: 90.0rem;
+    height: 30.0rem;
+    /* overflow: hidden; */
+    margin-top: 7.0rem;
+    margin-bottom: 8.0rem;
+    margin-left: 6.0rem;
+}
+.prdlist{
+    font-size: 2.0rem;
+    margin-bottom: 2.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buyoneproduct{
+    /* width: .0rem; */
+    margin-left: -10.0rem;
+}
+.displayProducts{
+    display: flex;
+    overflow-x: auto;
+}
+.fullcart{
+    width: 12.0rem;
+    height: 22.0rem;
+    padding: 1.0rem;
+    /* background-color: white; */
+    border-radius: 0.40rem;
+    margin-bottom: 1.0rem;
+    margin-left: 1.0rem;
+    color: black;
+    display: inline-block;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0px 0px 6px 0px black;
+}
+#cartdetail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.0rem;
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cartdetailbtns{
+    margin-left: 3.0rem;
+}
+.buyall{
+    border: none;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    padding: 0.40rem;
+    border-radius: 0.10rem;
+    background-color: yellowgreen;
+}
+
+.buyall:hover{
+    border: 0.10rem solid orange;
+}
+.removeall{
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    margin-left: 1.0rem;
+    color: white;
+    margin-right: 1.0rem;
+    padding: 0.40rem;
+}
+.removeall:hover{
+    background-color: red;
+}
+.clearproduct{
+    position: relative;
+    display: inline-flex;
+    margin-top: 0.50rem;
+    margin-left: -1.0rem;
+
+}
+.clearproduct button{
+    width: 6.0rem;
+    margin: 1.10rem;
+    padding: 0.20rem;
+    border: none;
+}
+.clearproduct:hover{    
+    color: red;
+}
+.clear{
+    text-decoration: none;
+    /* margin-top: 1.0rem; */
+    background-color: black;
+    color: white;
+    margin: 1.10rem;
+    padding: 00.30rem;
+    border: none;
+}
+
+
+.removeoneproduct:hover{
+    background-color: red;
+}
+
+.imgpro{
+    height: 9.0rem;
+}
+.imgpro img{
+    width: 11.0rem;
+    /* margin: 1.20rem; */
+}
+.prddetail h2{
+    padding-left: 1.50rem;
+    margin-top: 0.80rem;
+    width: 10.0rem;
+}
+.prddetail h4{
+    padding-left: 1.50rem;
+    margin-top: 0.80rem;
+}
+.quentity{
+    display: flex;
+    padding-left: 2.0rem;
+    padding-top: 1.0rem;
+    align-items: center;
+    font-size: 1.0rem;
+}
+.quentity h4{
+    padding: 0.50rem;
+    animation: quentity linear 300ms;
+}
+
+/* ---------------media quary for responsive web---------------- */
+@media screen and (max-width: 475px) {
+    #displayCart{
+        margin-bottom: 50.0rem;
+    }
+    .fullcart{
+        font-size: 3.0rem;
+        width: 230.0rem;
+        height: 50.0rem;
+        padding: 2.0rem 2.0rem 2.0rem 2.0rem;
+    }
+    .prddetail{
+        margin-top: 11.80rem;
+        margin-left: 4.0rem;
+    }
+    .prddetail h2{
+        padding-left: 0.00rem;
+        width: 30.0rem;
+    }
+    .prddetail h4{
+        padding-left: 0.0rem;
+        margin-top: 0.80rem;
+    }
+    .imgpro img{
+        width: 25.0rem;
+        margin-left: 5.0rem;
+        margin-top: -3.0rem;
+    }
+    .clearproduct{
+        margin-top: 1.50rem;
+        margin-left: 1.0rem;
+    
+    }
+    .clearproduct button{
+        font-size: 3.0rem;
+        width: 16.0rem;
+        margin: 1.10rem;
+        padding: 0.20rem;
+        border: none;
+    }
+    .clear{
+        padding: 1.30rem;
+        border: none;
+    }
+    .quentity{
+        padding-left: 10.0rem;
+        padding-top: 3.0rem;
+        font-size: 3.0rem;
+    }
+    .quentity h4{
+        padding-left: 2.50rem;
+        padding-right: 2.50rem;
+    }
+    #cartdetail{
+        font-size: 3.0rem;
+    }
+    .prdlist{
+        font-size: 3.0rem;
+    }
+    .buyall{
+        padding: 1.40rem;
+        font-size: 3.0rem;
+    }
+    .removeall{
+        padding: 1.40rem;
+
+    }
+}
+
+
+
+
+
+
+@media(max-width: 375px){
+    #displayCart{
+        margin-bottom: 0.0rem;
+        margin-top: 3.0rem;
+        width: 28.0rem;
+        height: 30.0rem;
+        margin-left: 1.0rem;
+    }
+    .prdlist{
+        font-size: 2.0rem;
+    }
+    .fullcart{
+        font-size: 1.40rem;
+        width: 10.0rem;
+        height: 20.0rem;
+    }
+    .imgpro img{
+        width: 10.0rem;
+        margin-left: 0.0rem;
+        margin-top: -2.0rem;
+    }
+    .prddetail{
+        margin-top: 0.80rem;
+        margin-left: 0.0rem;
+    }
+    .prddetail h2{
+        padding-left: 0.00rem;
+        width: 30.0rem;
+    }
+    .prddetail h4{
+        padding-left: 0.0rem;
+        margin-top: 0.30rem;
+    }
+    .quentity{
+        padding-left: 3.0rem;
+        padding-top: 0.50rem;
+        font-size: 1.10rem;
+    }
+    .quentity h4{
+        padding-left: 0.50rem;
+        padding-right: 0.50rem;
+    }
+    .clearproduct{
+        margin-top: -0.50rem;
+        margin-left: -2.0rem;
+    }
+    .clearproduct button{
+        font-size: 1.0rem;
+        width: 6.0rem;
+        padding: 0.0rem;
+    }
+    .clear{
+        padding: 0.30rem;
+        font-size: 1.0rem;
+        border: none;
+    }
+    .buyoneproduct{
+        /* width: .0rem; */
+        margin-left: -60.0rem;
+    }
+    #cartdetail{
+        float: left;
+        font-size: 1.0rem;
+        width: 28.0rem;
+    }
+    .cartdetailbtns{
+        margin-left: 0.50rem;
+        display: flex;
+    }
+
+    .buyall{
+        border: none;
+        margin-left: 0.50rem;
+        margin-right: -1.0rem;
+        padding: 0.00rem;
+        border-radius: 0.10rem;
+        font-size: 1.0rem;
+        background-color: yellowgreen;
+    }
+    .removeall{
+        text-decoration: none;
+        border: none;
+        background-color: black;
+        margin-left: 1.0rem;
+        color: white;
+        margin-right: 1.0rem;
+        padding: 0.40rem;
+    }
+}

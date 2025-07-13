@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="../../assets/css/addtocart.css">
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+
+    </header>
+        <% if (cartdata != undefined) { %>
+            <div id="displayCart">
+                <h3 class="prdlist">Cart List</h3>
+                <div class="displayProducts">
+                    <% var total = 0; %> 
+                    <% cartdata.forEach((element) => { %>
+                        <% var subtotal = parseFloat(element.qnt*element.productprice) %> 
+                        <% total += +subtotal %> 
+                        <div class="fullcart">
+                            <div class='aboutproduct'>
+                                <div class="imgpro">
+                                    <img src="/uploads/images/<%= element.productimage %>" alt="product image">
+                                </div>
+                                <div class="prddetail">
+                                    <h2><%= element.productname %></h2>
+                                    <h4>Size: <%= element.productsize %></h4>
+                                    <h4>Price: <%= element.productprice * element.qnt %></h4>
+                                </div>
+                            </div>
+                            <div class="quentity">
+                                <a href="/shoeskart/addtocart/update/<%= element.productname %>?action=add"><i class="fa fa-plus iconhover"></i></a>
+                                <h4 id="quentityofproduct"><%= element.qnt %></h4>
+                                <a href="/shoeskart/addtocart/update/<%= element.productname %>?action=remove"><i class="fa fa-minus iconhover"></i></a>
+                            </div>
+                            <div class="clearproduct">
+                                <a href="/shoeskart/addtocart/update/<%= element.productname %>?action=clear" class="clear">Remove</a>
+                                <button class="buyoneproduct"> Buy now </button>
+                            </div>
+                        </div>
+        
+                    <% }) %>
+                </div>
+                <div id="cartdetail">
+                    <h2>Total Rs: <%= total %> </h2> 
+                    <div class="cartdetailbtns">
+                        <a href="/shoeskart/addtocart/deleteall" class="removeall">Remove All</a>
+                        <button class= 'buyall'>Proceed to buy </button>
+                    </div>
+                </div>
+            </div>
+        <% } else { %>
+            <div class="errorpage">
+                <div class="detail">
+                    <i class="fa fa-shopping-cart"></i>
+                    <h2>Your cart is empty</h2>
+                </div>
+                
+            </div>
+        <% } %> 
+
+    <footer>
+
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>

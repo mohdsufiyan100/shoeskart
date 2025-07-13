@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-size: 80%;
+}
+
+.addproductform{
+    margin-top: 10.0rem;
+    margin-bottom: 10.0rem;
+
+}
+.addproductlist{
+    background-color: wheat;
+    margin: auto;
+    width: 40.0rem;
+    padding: 2.0rem;
+}
+
+.productimage{
+    margin-left: 1.0rem;
+
+}
+.addproductlist h1{
+    margin-left: 14.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.prodetail{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1.60rem;
+    margin-bottom: 1.0rem;
+    font-size: 1.50rem;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 0.60rem;
+    margin-top: 0.40rem;
+    /* margin-left: 2.0rem; */
+    border: none;
+    outline: none;
+    border-radius: 0.10rem;
+}
+select{
+    outline: none;
+    margin-top: 0.40rem;
+}
+button{
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.20rem;
+}
+.forcancel{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.20rem;
+    background-color: white;
+    color: black;
+    padding: 1.0rem 2.0rem;
+    text-decoration: none;
+}
+.forcancel:hover{
+    background-color: red;
+
+}
+@media screen and (max-width: 475px){
+    .addproductform{
+        margin-left: 20.0rem;
+        margin-top: 8.0rem;
+        margin-bottom: 6.0rem;
+    
+    }
+    .addproductlist{
+        width: 60.0rem;
+        padding: 2.0rem;
+    }
+    .prodetail{
+        font-size: 3.0rem;
+    }
+    
+    #discription{
+        width: 50.0rem;
+    }
+    .addproductbtn{
+        margin-left: 3.0rem;
+        font-size: 3.0rem;
+    }
+    .forcancel{
+        font-size: 3.0rem;
+    }
+    .addproductlist h1{
+        margin-left: 20.0rem;
+        font-size: 3.0rem;
+    }
+}
+@media(max-width: 375px){
+    .addproductform{
+        margin-left: 0.0rem;
+        margin-top: 6.0rem;
+        margin-bottom: 0.0rem;
+    
+    }
+    .addproductlist{
+        width: 25.0rem;
+        padding: 2.0rem;
+    }
+    .prodetail{
+        font-size: 1.20rem;
+    }
+    #discription{
+        width: 20.0rem;
+    }
+    .addproductbtn{
+        margin-left: 3.0rem;
+        font-size: 1.20rem;
+    }
+    .forcancel{
+        font-size: 1.0rem;
+    }
+    .addproductlist h1{
+        margin-left: 6.0rem;
+        font-size: 1.20rem;
+    }
+
+}

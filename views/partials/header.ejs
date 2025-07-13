@@ -1,0 +1,160 @@
+<!-- for basket -->
+<div class="headerlogo">
+  <a href="/shoeskart"><img src="../../assets/images/logo.png" alt="logoimg" class="logoimage"></a>
+  
+</div>
+<div class="headinfo">
+  <div class="search mag">
+    <input type="text" placeholder="Search" id="searchinput">
+    <button id="search"><i class="fa fa-search"></i></button>
+  </div>
+
+  <div id="basket" class="mag">
+    <a href="/shoeskart/addtocart" class="basketa"><i class="fa fa-shopping-cart"></i></a> 
+
+    
+  </div>
+  <div id="menu0 " class="mag">
+    <div id="register">
+      <div id="userarea">
+        <p><i class="fa fa-user"></i>Account</p>
+      </div>
+      <div id="user_ul">
+        <ul>
+          <hr>
+          <a href="/shoeskart/profile"><li>Account</li><hr></a>
+          <a href="/shoeskart/productlist"><li>Add product</li><hr></a>
+          <a href="/shoeskart/logout"><li>Logout</li></a>
+        </ul>  
+      </div>
+    </div>
+  </div>  
+  
+  <div id="responsive" class="mag">
+    <button id="res"><i class="fa fa-align-justify"></i></button>
+  </div>
+</div>
+
+
+<div class="contactno">
+  <a href="tel:+919335569393"><i class="fa fa-phone"></i>+91 9335569393</a>
+</div>
+  
+
+
+<div id="formobileview">
+  <menu id="menubaarformobile">
+    <ul>
+        <li>HOME</li><hr>
+        <li id="category">CATEGORY
+            <i class="fa fa-chevron-down" id="fruits-arrow"></i> <hr>
+            <div id="categorylist">
+                <ul>
+                  <li class="forlihover">ADIDAS</li><hr>
+                  <li class="forlihover">LEE COOPER</li><hr>
+                  <li class="forlihover">NIKE</li><hr>
+                  <li class="forlihover">RED CHEIF</li><hr>
+                  <li class="forlihover">PUMA</li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#onsale" class="salelink">ON SALE</a></li><hr>
+        <li>SPORTS SHOES </li><hr>
+        <li>SAFETY SHOES</li><hr>
+    </ul>
+    <div class="menuservises">
+      <a href="/shoeskart/aboutus">About us</a>
+      <a href="">contact us</a>
+    </div>
+    <div class="menusocialicon">
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-facebook"></i></a>
+    </div>
+</menu>
+</div>
+<menu class="menubaar">
+    <ul>
+        <li>HOME</li>
+        <li id="categorybig">Category
+            <i class="fa fa-chevron-down" id="fruits-arrow"></i>
+            <div id="categorylistbig">
+                <ul>
+                  <li class="forlihover">ADIDAS</li><hr>
+                  <li class="forlihover">LEE COOPER</li><hr>
+                  <li class="forlihover">NIKE</li><hr>
+                  <li class="forlihover">RED CHEIF</li><hr>
+                  <li class="forlihover">PUMA</li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#onsale" class="salelink">ON SALE</a></li>
+        <li>SPORTS SHOES </li>
+        <li>SAFETY SHOES</li>
+    </ul>
+</menu>
+
+<script>
+  let searchbtn = document.getElementById('search');
+  let searchinput0 = document.getElementById('searchinput');
+  searchbtn.addEventListener('click', function searchbaar() {
+    if (searchinput0.style.display == 'inline-flex') {
+        searchinput0.style.display = 'none';
+    }
+    else {
+        searchinput0.style.display = 'inline-flex';
+    }
+  })
+
+  let profilebtn = document.getElementById('userarea');
+  let profileli = document.getElementById('user_ul');
+  // profileli.style.display = "none";
+  profilebtn.addEventListener('click', () => {
+    if (profileli.style.display == "inline-flex") {
+      profileli.style.display = "none";
+    } else {
+      profileli.style.display = "inline-flex";
+    }
+  })
+  // for category list ----------------
+  let categorybtnbig = document.getElementById('categorybig');
+  let categorylistbig = document.getElementById('categorylistbig');
+  categorylistbig.style.display = "none";
+  categorybtnbig.addEventListener('click', () => {
+    if (categorylistbig.style.display == "inline-flex") {
+      categorylistbig.style.display = "none";
+    } else {
+      categorylistbig.style.display = "inline-flex";
+    }
+  })
+  let categorybtn = document.getElementById('category');
+  let categorylist = document.getElementById('categorylist');
+  categorylist.style.display = "none";
+  categorybtn.addEventListener('click', () => {
+    if (categorylist.style.display == "inline-flex") {
+      categorylist.style.display = "none";
+    } else {
+      categorylist.style.display = "inline-flex";
+    }
+  })
+
+  // for responsive menu baar ----------------
+  let responsivemenubtn = document.getElementById('responsive');
+  let responsivemenu = document.getElementById('formobileview');
+  responsivemenu.style.display = "none";
+  responsivemenubtn.addEventListener('click', () => {
+    if (responsivemenu.style.display == "block") {
+      responsivemenu.style.display = "none";
+    } else {
+      responsivemenu.style.display = "block";
+    }
+  })
+</script>
+
+
+
+
+
+
+
+
